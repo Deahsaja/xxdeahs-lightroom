@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxdeahs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Dena Ahmad Septian</h1>
+            <p>Selamat datang di website kreatif saya! Temukan preset Lightroom dan mentahan foto di bawah ini!</p>
+        </div>
+
+        <div class="button-container">
+            <button class="button" onclick="openModal('presetModal')">Download Preset Lightroom</button>
+            <button class="button" onclick="openModal('photoModal')">Download Mentahan Foto</button>
+        </div>
+
+        <h2>Temukan Foto Lain di Pinterest:</h2>
+        <a href="https://www.pinterest.com" class="button pinterest">Kunjungi Pinterest</a>
+    </div>
+
+    <div id="presetModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('presetModal')">&times;</span>
+            <h2>Pilih Preset Lightroom</h2>
+            <div class="carousel">
+                <a href="assets/presets/preset1.xmp" download="Preset1.xmp" class="carousel-item">Preset 1</a>
+                <a href="assets/presets/preset2.xmp" download="Preset2.xmp" class="carousel-item">Preset 2</a>
+                <a href="assets/presets/preset3.xmp" download="Preset3.xmp" class="carousel-item">Preset 3</a>
+                <a href="assets/presets/Midnight Haze.xmp" download="Midnight Haze.xmp" class="carousel-item">Midnight Haze</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('photoModal')">&times;</span>
+            <h2>Pilih Mentahan Foto</h2>
+            <div class="carousel">
+                <a href="assets/photos/foto1.jpeg" download="Mentahan_Foto1.jpeg" class="carousel-item">Foto For Midnight Haze</a>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="backgroundMusic" src="assets/music.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
